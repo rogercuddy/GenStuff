@@ -1,0 +1,96 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Test Results for TEST-456</title>
+    </head>
+    <body style="margin: 0; padding: 0; background-color: #001a33; font-family: Arial, sans-serif;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 20px;">
+            <!-- Header -->
+            <div style="background: linear-gradient(135deg, #003d5c 0%, #002b4d 100%); padding: 30px; border-radius: 8px 8px 0 0; border-bottom: 3px solid #FFD700;">
+                <h1 style="margin: 0 0 10px 0; color: #FFFFFF; font-size: 28px;">
+                    Test Results Report
+                </h1>
+                <p style="margin: 0; color: #B0BEC5; font-size: 14px;">
+                    Automated Test Execution Summary
+                </p>
+            </div>
+            
+            <!-- Summary Section -->
+            <div style="background-color: #002b4d; padding: 25px; border-left: 4px solid #FF6B6B;">
+                <h2 style="margin: 0 0 15px 0; color: #FF6B6B; font-size: 22px;">
+                    Some Tests Failed ✗
+                </h2>
+                <p style="margin: 0 0 10px 0; color: #FFFFFF; font-size: 16px;">
+                    <strong>JIRA Story:</strong> <span style="color: #FFD700;">TEST-456</span>
+                </p>
+                <p style="margin: 0; color: #E0E0E0; font-size: 14px;">
+                    <strong>Summary:</strong> 
+                    4 tests executed • 
+                    <span style="color: #4CAF50;">2 passed</span> • 
+                    <span style="color: #FF6B6B;">2 failed</span> • 
+                    <span style="color: #FFA726;">0 skipped</span>
+                    
+                </p>
+            </div>
+            
+            <!-- Test Results Table -->
+            <div style="background-color: #003d5c; padding: 20px; border-radius: 0 0 8px 8px;">
+                <table style="width: 100%; border-collapse: collapse; background-color: #002b4d;">
+                    <thead>
+                        <tr style="background-color: #004d73;">
+                            <th style="padding: 15px; border: 1px solid #005580; color: #FFD700; text-align: left; font-size: 14px; width: 30%;">Test Name</th>
+                            <th style="padding: 15px; border: 1px solid #005580; color: #FFD700; text-align: center; font-size: 14px; width: 12%;">Status</th>
+                            <th style="padding: 15px; border: 1px solid #005580; color: #FFD700; text-align: left; font-size: 14px; width: 30%;">Description</th>
+                            <th style="padding: 15px; border: 1px solid #005580; color: #FFD700; text-align: left; font-size: 14px; width: 28%;">Error Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+        <tr style="background-color: #002b4d;">
+            <td style="padding: 12px; border: 1px solid #004d73; color: #FFFFFF; font-family: monospace;">test_passing_assertion</td>
+            <td style="padding: 12px; border: 1px solid #004d73; text-align: center;"><span style="color: #4CAF50; font-weight: bold;">✓ PASSED</span></td>
+            <td style="padding: 12px; border: 1px solid #004d73; color: #E0E0E0; font-style: italic;">This test should pass successfully.</td>
+            <td style="padding: 12px; border: 1px solid #004d73; color: #CCCCCC;">-</td>
+        </tr>
+        
+
+        <tr style="background-color: #002b4d;">
+            <td style="padding: 12px; border: 1px solid #004d73; color: #FFFFFF; font-family: monospace;">test_failing_assertion</td>
+            <td style="padding: 12px; border: 1px solid #004d73; text-align: center;"><span style="color: #FF6B6B; font-weight: bold;">✗ FAILED</span></td>
+            <td style="padding: 12px; border: 1px solid #004d73; color: #E0E0E0; font-style: italic;">This test will fail to demonstrate error reporting.</td>
+            <td style="padding: 12px; border: 1px solid #004d73; color: #FFB6B6; font-family: monospace; font-size: 11px; max-width: 400px; word-wrap: break-word;">self = &lt;test_failures.TestWithFailures object at 0x7eeb4d2dec60&gt;<br><br>    def test_failing_assertion(self):<br>        """This test will fail to demonstrate error reporting."""<br>        expected = 10<br>... (truncated)</td>
+        </tr>
+        
+
+        <tr style="background-color: #002b4d;">
+            <td style="padding: 12px; border: 1px solid #004d73; color: #FFFFFF; font-family: monospace;">test_exception_raised</td>
+            <td style="padding: 12px; border: 1px solid #004d73; text-align: center;"><span style="color: #FF6B6B; font-weight: bold;">✗ FAILED</span></td>
+            <td style="padding: 12px; border: 1px solid #004d73; color: #E0E0E0; font-style: italic;">This test will raise an exception.</td>
+            <td style="padding: 12px; border: 1px solid #004d73; color: #FFB6B6; font-family: monospace; font-size: 11px; max-width: 400px; word-wrap: break-word;">self = &lt;test_failures.TestWithFailures object at 0x7eeb4d2def30&gt;<br><br>    def test_exception_raised(self):<br>        """This test will raise an exception."""<br>        data = {"key": "value"}<br>... (truncated)</td>
+        </tr>
+        
+
+        <tr style="background-color: #002b4d;">
+            <td style="padding: 12px; border: 1px solid #004d73; color: #FFFFFF; font-family: monospace;">test_another_passing</td>
+            <td style="padding: 12px; border: 1px solid #004d73; text-align: center;"><span style="color: #4CAF50; font-weight: bold;">✓ PASSED</span></td>
+            <td style="padding: 12px; border: 1px solid #004d73; color: #E0E0E0; font-style: italic;">Another test that passes.</td>
+            <td style="padding: 12px; border: 1px solid #004d73; color: #CCCCCC;">-</td>
+        </tr>
+        
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Footer -->
+            <div style="margin-top: 20px; padding: 15px; background-color: #001a33; border-top: 2px solid #004d73; text-align: center;">
+                <p style="margin: 0; color: #78909C; font-size: 12px;">
+                    This is an automated test report generated by the QA team's test suite.
+                </p>
+            </div>
+        </div>
+    </body>
+    </html>
+    
