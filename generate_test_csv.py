@@ -15,7 +15,7 @@ import sys
 from pathlib import Path
 from typing import Optional
 
-from csv_analyzer_lib import CSVConfiguration, DataGenerator
+from lib.csv_analyzer_lib import CSVConfiguration, DataGenerator
 
 
 def generate_test_csv(
